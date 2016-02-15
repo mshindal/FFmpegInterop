@@ -6,11 +6,11 @@ if [ "$1" == "Win10" ]; then
 
     if [ "$2" == "x86" ]; then
         echo "Make Win10 x86"
-        pushd $DIR/ffmpeg
+        pushd $DIR
         rm -rf Output/Windows10/x86
         mkdir -p Output/Windows10/x86
         cd Output/Windows10/x86
-        ../../../configure \
+        ../../../ffmpeg/configure \
         --toolchain=msvc \
         --disable-programs \
         --disable-d3d11va \
@@ -27,11 +27,11 @@ if [ "$1" == "Win10" ]; then
 
     elif [ "$2" == "x64" ]; then
         echo "Make Win10 x64"
-        pushd $DIR/ffmpeg
+        pushd $DIR
         rm -rf Output/Windows10/x64
         mkdir -p Output/Windows10/x64
         cd Output/Windows10/x64
-        ../../../configure \
+        ../../../ffmpeg/configure \
         --toolchain=msvc \
         --disable-programs \
         --disable-d3d11va \
@@ -48,11 +48,11 @@ if [ "$1" == "Win10" ]; then
 
     elif [ "$2" == "ARM" ]; then
         echo "Make Win10 ARM"
-        pushd $DIR/ffmpeg
+        pushd $DIR
         rm -rf Output/Windows10/ARM
         mkdir -p Output/Windows10/ARM
         cd Output/Windows10/ARM
-        ../../../configure \
+        ../../../ffmpeg/configure \
         --toolchain=msvc \
         --disable-programs \
         --disable-d3d11va \
@@ -77,11 +77,11 @@ elif [ "$1" == "Win8.1" ]; then
 
     if [ "$2" == "x86" ]; then
         echo "Make Win8.1 x86"
-        pushd $DIR/ffmpeg
+        pushd $DIR
         rm -rf Output/Windows8.1/x86
         mkdir -p Output/Windows8.1/x86
         cd Output/Windows8.1/x86
-        ../../../configure \
+        ../../../ffmpeg/configure \
         --toolchain=msvc \
         --disable-programs \
         --disable-d3d11va \
@@ -98,11 +98,11 @@ elif [ "$1" == "Win8.1" ]; then
 
     elif [ "$2" == "x64" ]; then
         echo "Make Win8.1 x64"
-        pushd $DIR/ffmpeg
+        pushd $DIR
         rm -rf Output/Windows8.1/x64
         mkdir -p Output/Windows8.1/x64
         cd Output/Windows8.1/x64
-        ../../../configure \
+        ../../../ffmpeg/configure \
         --toolchain=msvc \
         --disable-programs \
         --disable-d3d11va \
@@ -119,11 +119,11 @@ elif [ "$1" == "Win8.1" ]; then
 
     elif [ "$2" == "ARM" ]; then
         echo "Make Win8.1 ARM"
-        pushd $DIR/ffmpeg
+        pushd $DIR
         rm -rf Output/Windows8.1/ARM
         mkdir -p Output/Windows8.1/ARM
         cd Output/Windows8.1/ARM
-        ../../../configure \
+        ../../../ffmpeg/configure \
         --toolchain=msvc \
         --disable-programs \
         --disable-d3d11va \
@@ -148,11 +148,11 @@ elif [ "$1" == "Phone8.1" ]; then
 
     if [ "$2" == "ARM" ]; then
         echo "Make Phone8.1 ARM"
-        pushd $DIR/ffmpeg
+        pushd $DIR
         rm -rf Output/WindowsPhone8.1/ARM
         mkdir -p Output/WindowsPhone8.1/ARM
         cd Output/WindowsPhone8.1/ARM
-        ../../../configure \
+        ../../../ffmpeg/configure \
         --toolchain=msvc \
         --disable-programs \
         --disable-d3d11va \
@@ -172,11 +172,11 @@ elif [ "$1" == "Phone8.1" ]; then
 
     elif [ "$2" == "x86" ]; then
         echo "Make Phone8.1 x86"
-        pushd $DIR/ffmpeg
+        pushd $DIR
         rm -rf Output/WindowsPhone8.1/x86
         mkdir -p Output/WindowsPhone8.1/x86
         cd Output/WindowsPhone8.1/x86
-        ../../../configure \
+        ../../../ffmpeg/configure \
         --toolchain=msvc \
         --disable-programs \
         --disable-d3d11va \
